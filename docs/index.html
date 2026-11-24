@@ -3627,7 +3627,8 @@ return Plotly;
  header { background: #1b2a4a; color: white; padding: 28px 40px; }
  header h1 { margin: 0 0 6px; font-size: 26px; }
  header p { margin: 0; color: #adb5bd; font-size: 14px; }
- .cards { display: flex; flex-wrap: wrap; gap: 14px; padding: 24px 40px 8px; }
+ .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; padding: 24px 40px 8px; }
+@media (max-width: 700px) { .cards { grid-template-columns: 1fr 1fr; padding: 16px 14px 4px; } header { padding: 22px 18px; } .grid { padding: 16px 14px 30px; } .impact { margin: 16px 14px 0; } footer { padding: 0 14px 24px; } }
  .card { background: white; border-radius: 10px; padding: 18px 22px; flex: 1 1 150px;
          box-shadow: 0 1px 3px rgba(0,0,0,.08); }
  .kpi { font-size: 26px; font-weight: 700; }
@@ -3638,6 +3639,8 @@ return Plotly;
           box-shadow: 0 1px 3px rgba(0,0,0,.08); }
  @media (min-width: 1000px) { .grid { grid-template-columns: 1fr 1fr; } .wide { grid-column: 1 / -1; } }
  footer { padding: 0 40px 30px; color: #868e96; font-size: 12px; }
+ .js-plotly-plot .svg-container { max-width: 100%; }
+ .js-plotly-plot svg.main-svg { max-width: 100%; height: auto; }
  .impact { background: #fff4e6; border-left: 4px solid #e8590c; margin: 16px 40px 0;
            padding: 14px 18px; border-radius: 6px; font-size: 14px; }
 </style></head><body>
@@ -3664,4 +3667,5 @@ return Plotly;
 </div>
 <footer>Source: Olist Brazilian E-Commerce Public Dataset (Kaggle). Revenue = product value of
 delivered orders, excluding freight. Analysis: Python (Pandas), SQL (SQLite), dashboard in Plotly.</footer>
+<script>window.addEventListener('load',function(){setTimeout(function(){document.querySelectorAll('.js-plotly-plot').forEach(function(g){try{Plotly.Plots.resize(g);}catch(e){}});},150);});</script>
 </body></html>
