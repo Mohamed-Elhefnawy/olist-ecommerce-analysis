@@ -2,6 +2,8 @@
 
 End-to-end analysis of 96,478 delivered orders from the [Olist Brazilian E-Commerce public dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Sep 2016 - Aug 2018): from raw CSVs to an executive dashboard and three quantified business opportunities.
 
+**Live dashboard:** [Open the interactive sales & operations dashboard](https://files.instinct.com/2tbbl9got3vu-olist-e-commerce-sales-analysis) - no sign-in needed.
+
 **Headline:** R$ 13.2M revenue analyzed. Late deliveries (8.1% of orders) earn 1-star reviews 46% of the time vs 7% on-time. Only 3.0% of customers ever reorder. Three opportunities modeled at **R$ 555,651/year combined** (5.5% of annual revenue) - a scenario illustration across distinct bases (revenue opportunities + conditional freight savings), with explicit assumptions and no double-counting; not a guaranteed annual benefit.
 
 ## Deliverables
