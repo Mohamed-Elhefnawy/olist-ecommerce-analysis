@@ -9,7 +9,7 @@ End-to-end analysis of 96,478 delivered orders from the [Olist Brazilian E-Comme
 | Item | Where |
 |---|---|
 | Interactive dashboard (self-contained HTML) | `dashboard/index.html` |
-| Findings & recommendations report (PDF) | `report/Olist-Findings-Report.pdf` |
+| Findings & recommendations report (PDF) | `Olist-Findings-Report.pdf` |
 | Business questions in SQL (8 queries, SQLite) | `sql/analysis.sql` |
 | Data cleaning pipeline | `python/clean_data.py` |
 | KPI & opportunity models | `analysis/run_analysis.py`, `analysis/opportunities.py` |
